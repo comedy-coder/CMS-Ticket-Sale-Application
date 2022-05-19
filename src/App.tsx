@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { publicRoutes } from "./routes";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -9,7 +9,12 @@ function App() {
       <div className="App">
         <Routes>
           {publicRoutes.map((route: any, index: any) => {
-            const Layout = route.layout || DefaultLayout;
+            let Layout = DefaultLayout;
+            if (route.layout) {
+              Layout = route.layout;
+            } else if (route.layout === null) {
+              Layout = Fragment;
+            }
             const Page = route.component;
             return (
               <Route

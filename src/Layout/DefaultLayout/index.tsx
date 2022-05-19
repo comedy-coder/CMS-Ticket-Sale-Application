@@ -1,8 +1,13 @@
-import React from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+type DefaultLayoutProp = {
+  children?: React.ReactNode | null;
+};
+interface Props {
+  children?: React.ReactNode | null;
+}
 
-const DefaultLayout = ({ children }: any) => {
+const DefaultLayout: React.FC<Props> = ({ children }: DefaultLayoutProp) => {
   return (
     <div>
       <Header />

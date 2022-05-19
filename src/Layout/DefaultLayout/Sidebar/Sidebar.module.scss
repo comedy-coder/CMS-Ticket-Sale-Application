@@ -1,3 +1,33 @@
 .wrapper{
     width: 321px;
+    padding: 17px 36px 0 33px;
+
+}
+.logo {
+    margin-bottom: 59px;
+}
+.list{
+    
+    a { font-weight: 700;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 15px 16px 15px 24px;
+        gap: 12px;
+        width: 252px;
+        height: 56px;
+        border-radius: 8px;
+        font-size: 1.8rem;
+     &.active {
+        color: white;
+        background-color: #FFB800;
+       img {
+        filter: brightness(0) invert(1);
+       }
+     } 
+    }
+}
+a:-webkit-any-link {
+    color: #1E0D03;
+    cursor: pointer;
 }

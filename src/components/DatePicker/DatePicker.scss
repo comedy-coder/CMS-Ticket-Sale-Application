@@ -1,0 +1,103 @@
+.selector {
+    position: absolute;
+    z-index: 2;
+    top: 155px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+   left: 340px;
+    justify-content: space-between;
+    width: 318px;
+    label{
+        font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    }
+}
+.sdp{
+  
+    width: 353px !important;
+    height: 396px !important;
+    box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35) !important;
+    border-radius: 20px !important;
+    padding: 24px 18px 24px 32px!important;
+    position: relative;
+   
+}
+
+.sdp--month-picker{
+    
+    justify-content: flex-start !important;
+    margin-bottom: 56px;
+    & button{
+        color: #FF7506 !important;
+        border: none !important;
+        box-shadow: none;
+    }
+    & .sdp--month-name{
+      
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        
+    }
+    & svg{
+        width: 40px;
+        height: 40px;
+        color: #1E0D03;
+        
+    }
+}
+.sdp--dates-grid{
+    border-top: 1px solid #DCDDFD;
+   
+    & p{
+       
+        font-family: 'Montserrat'!important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        line-height: 28px !important;
+        color: #C55E00 !important;
+    }
+    & .sdp--text{
+     
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #23221F;
+        margin-top: 16px;
+    }
+    & .sdp--text__inactive{
+      
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7E7D88 ;
+    }
+    & .sdp--date-btn__selected{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+
+/* Yellow / 3 */
+
+background: #FFBA7B;
+      
+    }
+}
+.rdrDefinedRangesWrapper {
+    display: none;
+}
+.rdrDateDisplayWrapper {
+    display: none
+}
+.rdrMonthAndYearWrapper {
+    display: none !important
+}

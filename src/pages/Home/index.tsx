@@ -1,7 +1,11 @@
 import React from "react";
-
+import DatetimePicker from "~/components/DatePicker";
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <DatetimePicker />
+    </div>
+  );
 };
 
 export default Home;

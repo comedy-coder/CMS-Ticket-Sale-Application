@@ -3,9 +3,10 @@ import "./DatePicker.scss";
 import { useState } from "react";
 import DatePicker from "sassy-datepicker";
 import Radio from "@mui/material/Radio";
-import { DateRangePicker } from "react-date-range";
+import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
+import { addDays } from "date-fns";
 const DashboardCalendar = () => {
   const [date, setDate] = useState(new Date());
   const [selectedValue, setSelectedValue] = React.useState("a");
@@ -16,14 +17,13 @@ const DashboardCalendar = () => {
   const onChange = (newDate: any) => {
     setDate(newDate);
   };
-  const selectionRange = {
-    startDate: new Date(),
-    endDate: new Date(),
-    key: "selection",
-  };
-  const handleSelect = (ranges: any) => {
-    console.log(ranges);
-  };
+  const [state, setState] = useState<any | null>([
+    {
+      startDate: new Date(),
+      endDate: addDays(new Date(), 7),
+      key: "selection",
+    },
+  ]);
 
   return (
     <>
@@ -68,7 +68,12 @@ const DashboardCalendar = () => {
         </div>
       </div>
       <DatePicker onChange={onChange} selected={date} />
-      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRange
+        editableDateInputs={true}
+        onChange={(item) => setState([item.selection])}
+        moveRangeOnFirstSelection={false}
+        ranges={state}
+      />
     </>
   );
 };

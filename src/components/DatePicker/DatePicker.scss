@@ -101,3 +101,32 @@ background: #FFBA7B;
 .rdrMonthAndYearWrapper {
     display: none !important
 }
+.rdrWeekDays{
+    span{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7E7D88 ;
+    }
+}
+.rdrWeekDays{
+    span{
+
+        font-family: 'Montserrat'!important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        line-height: 28px !important;
+        color: #C55E00 !important;
+    }
+}
+
+.rdrMonth{
+    width: 353px !important;
+    height: 396px !important;
+    box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35) !important;
+    border-radius: 20px !important;
+    padding: 24px 18px 24px 32px!important;
+    position: relative;
+}

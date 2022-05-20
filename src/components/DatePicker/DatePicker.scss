@@ -128,5 +128,14 @@ background: #FFBA7B;
     box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35) !important;
     border-radius: 20px !important;
     padding: 24px 18px 24px 32px!important;
-    position: relative;
+    position: absolute;
+}
+.rdrDays{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #23221F;
+    margin-top: 16px;
 }

@@ -7,7 +7,7 @@
     align-items: center;
    left: 340px;
     justify-content: space-between;
-    width: 318px;
+    width: 304px;
     label{
         font-style: normal;
     font-weight: 500;
@@ -52,7 +52,7 @@
     }
 }
 .sdp--dates-grid{
-    border-top: 1px solid #DCDDFD;
+
    
     & p{
        
@@ -71,7 +71,7 @@
         font-size: 16px;
         line-height: 20px;
         color: #23221F;
-        margin-top: 16px;
+        margin-top: 10px;
     }
     & .sdp--text__inactive{
       
@@ -124,11 +124,13 @@ background: #FFBA7B;
 
 .rdrMonth{
     width: 353px !important;
-    height: 396px !important;
-    box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35) !important;
+   background-color: transparent;
+    padding: 0px 1.6rem 0.666rem 2.9rem !important;
     border-radius: 20px !important;
-    padding: 24px 18px 24px 32px!important;
+    top : 216px;
     position: absolute;
+    display: block;
+    
 }
 .rdrDays{
     font-family: 'Montserrat';
@@ -137,5 +139,22 @@ background: #FFBA7B;
     font-size: 16px;
     line-height: 20px;
     color: #23221F;
-    margin-top: 16px;
+  
+    margin-top: 10px
+
+}
+.rdrDay{
+    line-height: 1.5rem;
+    height: 4.18rem !important   ;
+}
+.sdp--square-btn.sdp--date-btn.sdp--text{
+    width: 32px;
+    height: 32px;
+} 
+.rdrStartEdge.rdrEndEdge{
+    color: #FFBA7B !important;
+
+}
+.rdrDay.rdrDayToday.rdrDayWeekend.rdrDayEndOfWeek{
+    color: #FFBA7B !important;
 }
